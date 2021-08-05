@@ -8,9 +8,9 @@
 }
 
 :root {
-  --primary-color: #fce138;
-  --secondary-color: #024e76;
-  --tertiary-color: #39a6b2;
+  --primary-color: tan;
+  --secondary-color: lightgreen;
+  --tertiary-color: royalblue;
 }
 /* END FULL PAGE STYLE SHEET*/
 
@@ -116,7 +116,7 @@
 /*BEGIN Hero Style Sheet*/
 
     .hero {
-        background-image: url("../images/hero-bg.jpg");
+        background-image: blue;
         background-size: cover;
         background-position: center;
         display: flex;
@@ -134,7 +134,7 @@
     width: 35%;
     text-align: right;
     margin: 3.5%;
-    color: #fff;
+    color: royalblue;
     font-size: 18px;
     line-height: 1.2;
   }
