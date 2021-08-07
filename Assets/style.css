@@ -35,15 +35,25 @@ nav {
 
 nav a {
   text-decoration: none;
+  color: white;
   font-size: 20px;
   padding-right: 40px;
 
 }
 
 .hero {
-  background-image: url("#");
+  background-image: url("./images/rm21-pd-sasi-03.jpg");
   background-size: cover;
   background-position: center;
-  
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.photo {
+  width: 500px;
+  height: auto;
+  padding: 0px;
+  border: 10px solid var(--primary);
+  margin: 50px;
 }
 
