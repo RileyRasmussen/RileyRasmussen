@@ -11,6 +11,8 @@ body {
 
 :root {
   --primary:#00A6A6;
+  --secondary: #fff;
+  --tertiary: lightgrey;
 }
 
 header {
@@ -24,7 +26,7 @@ header {
 }
 
 header h1 {
-  color: white;
+  color: var(--secondary);
 }
 
 nav {
@@ -35,7 +37,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--secondary);
   font-size: 20px;
   padding-right: 40px;
 
@@ -43,17 +45,135 @@ nav a {
 
 .hero {
   background-image: url("./images/rm21-pd-sasi-03.jpg");
-  background-size: cover;
+  background-size:cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   flex-wrap: wrap;
   justify-content: left;
+
 }
+
+.hero h2 {
+ flex-wrap: wrap;
+  flex-direction: row;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-size: 20px;
+}
+
+ .hero h2::first-line {
+   font-size: 30px;
+ }
 
 .photo {
   width: 500px;
   height: auto;
   padding: 0px;
   border: 10px solid var(--primary);
-  margin: 50px;
+  margin: 50px 20px 50px 50px;
+  
 }
 
+.About-Me {
+  justify-content: center;
+  right: 30%;
+  font-size: 40px;
+  border-top: 3px solid;
+  background-color: var(--tertiary);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+}
+
+.About-Me h2, .Contact-Me h2, .My-Work h2{
+  border-right: 3px solid;
+  padding: 20px;
+}
+
+.About-Me p {
+  font-size: 20px;
+  padding: 20px;
+
+}
+
+.My-Work {
+  justify-content: center;
+  right: 30%;
+  font-size: 40px;
+  border-top: 3px solid;
+  background-color: var(--tertiary);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+  
+}
+
+.My-Work h3 {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 20px;
+  border: 3px solid;
+  color: black;
+}
+
+.My-Work a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.first-work {
+  background-image: url("../Assets/images/hero-bg.jpg");
+  background-size: cover;
+  height: 100% ;
+  width: 100%;
+  flex-grow: 3;
+}
+
+.Contact-Me {
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--tertiary);
+  border-top: 3px solid;
+  width: 100%;
+}
+
+.Contact-Me a {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-decoration: none;
+  color: var(--primary);
+  justify-content: space-between;
+  padding: 20px;
+  
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
