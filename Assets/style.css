@@ -109,7 +109,6 @@ nav a {
   flex-direction: row;
   width: 100%;
   
-  
 }
 
 .My-Work h3 {
@@ -124,6 +123,22 @@ nav a {
   color: black;
 }
 
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.first-work:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.test{
+  background-image: url("../Assets/images/hero-bg.jpg");
+  background-size: cover;
+}
+
 .My-Work a {
   text-decoration: none;
   display: flex;
@@ -131,15 +146,7 @@ nav a {
   justify-content: space-between;
   padding: 10px;
   margin-right: 20px;
-  flex-grow: 1;
-}
 
-.first-work {
-  background-image: url("../Assets/images/hero-bg.jpg");
-  background-size: cover;
-  height: 100% ;
-  width: 100%;
-  flex-grow: 3;
 }
 
 .Contact-Me {
